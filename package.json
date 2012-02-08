@@ -1,5 +1,5 @@
 { "name": "domevents"
-, "description": "node.js event api for dom events"
+, "description": "node.js eventemitter api for dom events"
 , "version": "0.0.1"
 , "homepage": "https://github.com/dodo/node-domevents"
 , "author": "dodo (https://github.com/dodo)"
