@@ -5,7 +5,7 @@ This Package provides the EventEmitter API for [DOM Events](http://www.w3.org/TR
 ## usage
 
 ```javascript
-DomEventEmitter = require('domevents').EventEmitter; // if you have a rquire available
+DomEventEmitter = require('domevents').EventEmitter; // if you have a require available
 DomEventEmitter = window.DomEventEmitter; // if you are in the browser
 
 var div = new DomEventEmitter(document.getElementById('div'), false);
