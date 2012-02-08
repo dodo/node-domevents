@@ -1,0 +1,17 @@
+{ "name": "domevents"
+, "description": "node.js event api for dom events"
+, "version": "0.0.1"
+, "homepage": "https://github.com/dodo/node-domevents"
+, "author": "dodo (https://github.com/dodo)"
+, "repository": {"type": "git", "url": "git://github.com/dodo/node-domevents.git"}
+, "main": "events.js"
+, "engines": {"node": ">= 0.4.x"}
+, "keywords": ["dom", "events", "emitter", "polyfill", "shim", "browser"]
+, "scripts": {
+    "prepublish": "cake build"}
+, "devDependencies": {
+    "browserify": ">= 1.6.1",
+    "scopify": ">= 0.2.1",
+    "muffin": ">= 0.2.6",
+    "coffee-script": ">= 1.1.3"}
+}
