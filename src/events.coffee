@@ -50,9 +50,7 @@ class DomEventEmitter extends EventEmitter
         removeEventListener(@element, event, @_domevents[event], @useCapture)
         super
 
-
-
-DomEventEmitter::on = DomEventEmitter::addListener
+    on: @::addListener
 
 
 # exports
