@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/dodo/node-domevents.png)](http://travis-ci.org/dodo/node-domevents)
 # [domevents](https://github.com/dodo/node-domevents)
 
 This Package provides the EventEmitter API for [DOM Events](http://www.w3.org/TR/DOM-Level-2-Events/events.html).
