@@ -46,7 +46,7 @@ class DomEventEmitter extends EventEmitter
         super
 
     removeAllListener: (event) ->
-        # there will be none listners left
+        # there will be none listeners left
         removeEventListener(@element, event, @_domevents[event], @useCapture)
         super
 
