@@ -1,6 +1,6 @@
 *~
 *swp
 lib/*
-*.browser.*
+event*.js
 .lock-wscript
 node_modules/
