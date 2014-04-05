@@ -20,14 +20,21 @@ addEventListener = (element, event, listener, useCapture, mode) ->
         element.attachEvent("on#{event}", listener)
     else if mode is 'on'
         element["on#{event}"] = listener
+    else if mode is 'ext'
+        event =  event.charAt(0).toUpperCase() + event.substr(1)
+        console.log(event)
+        element["on#{event}"].addListener(listener)
 
 removeEventListener = (element, event, listener, useCapture, mode) ->
     if mode is 'html5'
         element.removeEventListener(event, listener, useCapture)
     else if mode is 'ie'
         element.detachEvent("on#{event}", listener)
-    else
-        delete element?["on#{event}"]
+    else if mode is 'on'
+        delete element["on#{event}"]
+    else if mode is 'ext'
+        event =  event.charAt(0).toUpperCase() + event.substr(1)
+        element["on#{event}"].removeListener(listener)
 
 
 
